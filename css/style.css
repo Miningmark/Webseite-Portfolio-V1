@@ -45,7 +45,7 @@ ul{
 }
 #intro-section .bg{
     z-index:0;
-    background-image:url(../assets/img/intro-lg.jpg);
+    background-image:url(../assets/img/intro-bg.jpg);
 }  
 
 
@@ -292,7 +292,6 @@ ul{
     border-radius:50%;
     text-align:center;
     margin:10px 10px 10px 10px;
-    padding:0;
     width:100px;
     height:100px;
     line-height:7;
