@@ -10,26 +10,30 @@
     <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<!--navigation-->
     <nav>
         <ul>
 
         </ul>
     </nav>
     <div id="scroll-body">
+<!--intro-->
         <section id="intro-section" class="section">
             <div class="bg">
             </div>
             <div class="intro-body">
                 <div class="intro-contet">
                     <div class="heading">
-                        <h1>Miningmark</h1>
+                        <h1 id="test">Miningmark</h1>
                     </div>
+                    <span class="divider-header"></span>
                     <div class="subtext">
                         <h3>FRONT END SOFTWARE ENGINEER</h3>
                     </div>
                 </div>
             </div>
         </section>
+<!--about me-->
         <section id="about-section" class="section">
             <div class="section-wrapper">
                 <h1 class="section-heading">Hi, I'm Markus or also Miningmark</h1>
@@ -45,6 +49,7 @@
                 </div>
             </div>
         </section>
+<!--skills-->
         <section id="skills-section" class="section">
             <div class="section-wrapper">
                 <h1 class="section-heading">Skills</h1>
@@ -52,7 +57,7 @@
                 <div class="skills-flex-wrapper">
                     <div class="dev-wrapper">
                         <h2 class="skills-heading"><span class="sprite-dev"></span> DEVELOPMENT</h2>
-                        <ul>
+                        <ul class="dev-list">
                             <li class="dev-item">JavaScript</li>
                             <li class="dev-item">HTML5</li>
                             <li class="dev-item">CSS3</li>
@@ -81,81 +86,99 @@
                 </div>
             </div>
         </section>
-
-        <section id="portfolio-section" class="section">
-            <div>
+<!--career history-->
+        <section id="career-section" class="section">
+            <div class="section-wrapper">
+                <h1 class="section-heading"> Career History</h1>
+                <span class="divider"></span>
                 <div>
-                    <h1>Portfolio</h1>
+
+
+
+
+
+
+                </div>
+            </div>
+        </section>
+<!--portfolio-->
+        <section id="portfolio-section" class="section">
+            <div class="section-wrapper">
+                <div>
+                    <h1 class="section-heading">Portfolio</h1>
                     <span class="divider"></span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam voluptate vitae cupiditate sequi, nisi debitis sed odio modi deserunt, soluta suscipit asperiores est aliquam animi mollitia rerum dolore qui ex?</p>
-                    <div>
+                    <p>This is a part of my previous projects, including this portfolio website but also a website of a star wars fan group I am a member of. But also various browser games with and without backend.</p>
+                    <div class="projects">
                         <div>
-                            <img src="" alt="">
-                            <h2>Project 1</h2>
-                            <p>Beschreibung</p>
+                            <h2 class="project-title">portfolio Website</h2>
+                            <img class="project-img" src="assets/img/portfolio.png" alt="Portfolio">
+                            <p class="project-description">This is my portfolio website on which I present myself. To create the website I used HTML, CSS and some JavaScript. There is not much to tell, just make your own impression of the site.</p>
                             <span class="divider"></span>
                         </div>
                         <div>
-                            <img src="" alt="">
-                            <h2>Project 2</h2>
-                            <p>Beschreibung</p>
+                            <h2 class="project-title">Statera Website</h2>
+                            <img class="project-img" src="assets/img/statera.png" alt="">
+                            <p class="project-description">This is one of my first websites with a responsive design that is optimized for various browser widths as well as smartphones. Additionally, the website also features a sticky menu and some pictures and a video <a class="project-link" href="https://miningmark.github.io/Statera/">link to website</a>.</p>
                             <span class="divider"></span>
                         </div>
                         <div>
-                            <img src="" alt="">
-                            <h2>Project 3</h2>
-                            <p>Beschreibung</p>
+                            <h2 class="project-title">2048-Clone</h2>
+                            <img class="project-img" src="" alt="2048-Clone">
+                            <p class="project-description">My 2048 clone is my own version of the mobile game 2048, in this game you have to stack as many equal blocks as possible by pushing them into each other, after each move a new random block will always appear in a random place. In my version you can choose between different game sizes, for each size there is a separate highscore which is stored in a SQL database. This highscore input and output is realized by a Node.js server. The game also has an audio player for background music and a light and dark mode.</p>
                             <span class="divider"></span>
                         </div>
                         <div>
-                            <img src="" alt="">
-                            <h2>Project 4</h2>
-                            <p>Beschreibung</p>
+                            <h2 class="project-title">Pokedox</h2>
+                            <img class="project-img" src="assets/img/pokedex.png" alt="Pokedex">
+                            <p class="project-description">Pokedex is a website that displays the original 151 Pokemon. The data and images are loaded from a database via JSON's, since the database is not very performant, there is a short loading screen at the beginning of the page in which it is also displayed which Pokemon is currently being loaded. On the website you can then see all Pokemons on a color-coded map. If you click on this card, you will see all the values of the respective Pokemon <a href="https://miningmark.github.io/Pokedex/">link to website</a>.</p>
                             <span class="divider"></span>
                         </div>
                         <div>
-                            <img src="" alt="">
-                            <h2>Project 5</h2>
-                            <p>Beschreibung</p></div>
+                            <h2 class="project-title">Miningmark Industry</h2>
+                            <img class="project-img" src="assets/img/miningmark-industry.png" alt="Miningmark Industry">
+                            <p class="project-description">Miningmark-Industry is my first self-programmed browser game. It is an Idle-Kilcker Game, which runs in the browser without a backend. The game runs exclusively with HTML, CSS, JavaScript for the design I used Bootswatch. Cockies are used to save the game progress, this happens automatically every 30 seconds, but you can also export your game progress to a txt file and import it again. You can also choose between different display options in the menu, e.g. dark or light mode and a few others. Unfortunately this game is only available in German <a href="https://miningmark.github.io/Miningmark-Industry-V2/">link to website</a></p>
                             <span class="divider"></span>
                     </div>
                 </div>
             </div>
         </section>
-        <a href="" target="_blank">
-            <span>See more projects</span>
-            <img src="" alt="github">
+<!--more projects-->
+        <a class="btn-block" href="https://github.com/Miningmark" target="_blank">
+            <span class="info-text">See more projects</span>
+            <img class="info-img" src="assets/icons/github.svg" alt="github">
         </a>
+<!--contact-->
         <section id="contact-section" class="section">
-            <div>
+            <div class="section-wrapper">
                 <h1>Get in Touch</h1>
                 <span class="divider"></span>
                 <p>Feel free to send me a message!</p>
-            </div>
-            <div>
-                <form id="contactForm" action="">
-                    <div>
-                        <label for="name">Name</label>
-                        <input id="name" type="text" name="name" required="">
-                    </div>
-                    <div>
-                        <label for="email">E-Mail</label>
-                        <input id="email" type="text" name="email" required="">
-                    </div>
-                    <div>
-                        <label for="subject">Subject</label>
-                        <input id="subject" type="text" name="subject" required="">
-                    </div>
-                    <div>
-                        <label for="message">Message</label>
-                        <input id="message" type="text" name="message" required="">
-                    </div>
-                    <button type="submit" name="submit">
-                        <span>Send Message</span>
-                    </button>
-                </form>
+                <div>
+                    <form id="contactForm" action="">
+                        <div>
+                            <label for="name">Name</label>
+                            <input id="name" type="text" name="name" required="">
+                        </div>
+                        <div>
+                            <label for="email">E-Mail</label>
+                            <input id="email" type="text" name="email" required="">
+                        </div>
+                        <div>
+                            <label for="subject">Subject</label>
+                            <input id="subject" type="text" name="subject" required="">
+                        </div>
+                        <div>
+                            <label for="message">Message</label>
+                            <input id="message" type="text" name="message" required="">
+                        </div>
+                        <button type="submit" name="submit">
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </div>
             </div>
         </section>
+<!--footer-->
         <section id="footer" class="section">
             <div class="center-center">
                 <ul class="footer-list">
