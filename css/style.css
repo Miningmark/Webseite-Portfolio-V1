@@ -371,6 +371,7 @@ ul{
 
 
 
+
 #career-section{
     background-color: #2d7e67;
     box-sizing: border-box;
@@ -390,6 +391,12 @@ ul{
     animation: movedown 1s linear forwards;
     opacity: 0;
     z-index: 2;
+}
+.left-container{
+    left: 0;
+}
+.right-container{
+    left: 50%;
 }
 @keyframes movedown {
     0% {
@@ -423,12 +430,6 @@ ul{
     position: relative;
     border-radius: 6px;
     font-size: 15px;
-}
-.left-container{
-    left: 0;
-}
-.right-container{
-    left: 50%;
 }
 .career-img{
     position: absolute;
