@@ -1,3 +1,24 @@
+@font-face{
+    font-family:'poppins';
+    font-weight: regular;
+    src: url(assets/font/Nunito-Regular.woff2) format(woff2),
+         url(assets/font/Nunito-Regular.woff) format(woff);
+}
+@font-face{
+    font-family:'poppinsB';
+    font-weight: bold;
+    src: url(assets/font/Nunito-Bold.woff2) format(woff2),
+         url(assets/font/Nunito-Bold.woff2) format(woff);
+}
+
+:root{
+    --main-brand-color: #00b7c7;
+    --secondary-brand-color: #4d0ce8;
+    --primary-bg-color: #1b1b1b;
+    --secondary-bg-color: #303030;
+    --nav-color: #505050;
+    --text-color: #fff;
+}
 *{
     margin: 0;
     padding: 0;
@@ -25,14 +46,13 @@ ul{
     height: 260px;
     width: 50px;
     background-color: #505050;
-    color: chocolate;
     z-index: 2;
     display: flex;
     align-items: center;
     justify-content: right;
     padding-right: 10px;
     padding-left: 5px;
-    border-radius: 10px;
+    border-radius: 10px 0 0 10px;
 }
 .nav-container ul{
     display: flex;
@@ -62,11 +82,10 @@ ul{
     font-size: 1.5em;
     text-align: center;
     transition: 0.5s;
-    color: #fff;
 }
 .menu-icon:hover{
     transform: translateX(-10px);
-    color: #00b7c7;
+    filter: invert(50%) sepia(86%) saturate(1843%) hue-rotate(147deg) brightness(96%) contrast(101%);
 }
 .menu-text{
     position: absolute;
