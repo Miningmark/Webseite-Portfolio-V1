@@ -1,23 +1,25 @@
 @font-face{
-    font-family:'poppins';
-    font-weight: regular;
+    font-family:'nunito';
+    font-weight: 100;
     src: url(assets/font/Nunito-Regular.woff2) format(woff2),
          url(assets/font/Nunito-Regular.woff) format(woff);
 }
 @font-face{
-    font-family:'poppinsB';
+    font-family:'nunito';
     font-weight: bold;
     src: url(assets/font/Nunito-Bold.woff2) format(woff2),
          url(assets/font/Nunito-Bold.woff2) format(woff);
 }
-
 :root{
     --main-brand-color: #00b7c7;
+    --main-brand-color-dark: #007f8a;
     --secondary-brand-color: #4d0ce8;
     --primary-bg-color: #1b1b1b;
     --secondary-bg-color: #303030;
     --nav-color: #505050;
     --text-color: #fff;
+
+    --font-normal: nuito;
 }
 *{
     margin: 0;
@@ -28,24 +30,30 @@ html{
 }
 a {
     text-decoration:none;
-    color:#f2f2f2;
+    color: var(--text-color);
 }
 ul{
     list-style:none;
     padding:0;
 }
-
-
-
-
-
+h1, h2, h3{
+    font-family: var(--font-normal), sans-serif;
+    font-weight: bold;
+    color: var(--text-color);
+}
+p, span, a, li{
+    font-family: var(--font-normal), sans-serif;
+    font-weight: 100;
+    color: var(--text-color);
+}
+/*------------------------------------NAV------------------------------------*/
 .nav-container{
     position: fixed;
     right: 0;
     top: calc(50% - 100px);
     height: 260px;
     width: 50px;
-    background-color: #505050;
+    background-color: var(--nav-color);
     z-index: 2;
     display: flex;
     align-items: center;
@@ -101,13 +109,9 @@ ul{
     opacity: 1;
     transition: 0.5s;
     transform: translateX(-20px);
-    color: #00b7c7;
+    color: var(--main-brand-color);
 }
-
-
-
-
-
+/*------------------------------------.sections------------------------------------*/
 .center-center{
     position: absolute;
     top: 50%;
@@ -120,13 +124,14 @@ ul{
     padding:0;
     overflow:hidden;
     position:relative;
-    color: #f2f2f2;
+    color: var(--text-color);
 }
 .center{
     text-align:center;
     margin-left:auto;
     margin-right:auto;
 }
+/*------------------------------------INTRO------------------------------------*/
 .bg{
     width:100%;
     height:100%;
@@ -142,10 +147,6 @@ ul{
     z-index:0;
     background-image:url(../assets/img/intro-bg.jpg);
 }  
-
-
-
-
 .intro-body{
     width:100%;
     height:101vh;
@@ -164,10 +165,8 @@ ul{
 }
 .heading{
     font-size:4.5em;
-    font-weight:700;
     position:relative;
     padding-bottom:10px;
-    color:#f2f2f2;
     opacity: 0;
     animation-fill-mode:forwards;
     animation-timing-function:linear;
@@ -181,9 +180,7 @@ ul{
     display:inline-block;
     padding:1.2em 0;
     font-size:1.3rem;
-    font-weight:500;
     line-height:1.5;
-    color:#f2f2f2;
     text-transform:uppercase;
     margin:0;
     opacity: 0;
@@ -233,8 +230,9 @@ ul{
         transform:translateY(0);
       }
 }
+/*------------------------------------ABOUT------------------------------------*/
 #about-section{
-    background-color:#1b1b1b;
+    background-color: var(--primary-bg-color);
     min-height: 700px;
 } 
 .divider{
@@ -242,7 +240,7 @@ ul{
     margin:30px 0;
     width:100px;
     height:2px;
-    background-color:#00b7c7;
+    background-color: var(--main-brand-color);
     align-self: center;
 }
 .section-heading{
@@ -251,7 +249,6 @@ ul{
 .section-subheading{
     width:60%;
     font-size:1.2em;
-    font-weight:500;
     line-height:1.5;
     margin-top:1em;
 }
@@ -334,8 +331,9 @@ ul{
     margin-bottom:10px;
     font-size:1.15em;
 }
+/*------------------------------------SKILLS------------------------------------*/
 #skills-section{
-    background-color: #303030;
+    background-color: var(--secondary-bg-color);
 }
 .skills-flex-wrapper{
     height:17em;
@@ -363,7 +361,6 @@ ul{
 }
 .skills-heading-dev{
     text-transform:uppercase;
-    font-weight:700;
     font-size:1.5vw;
     text-align: center;
 }
@@ -407,7 +404,7 @@ ul{
 }
 .dev-item{
     display:inline-block;
-    border:2px solid #f2f2f2;
+    border:2px solid var(--text-color);
     border-radius:50%;
     text-align:center;
     margin:10px 10px 10px 10px;
@@ -466,7 +463,7 @@ ul{
 
 
 
-
+/*------------------------------------CAREER------------------------------------*/
 #career-section{
     background-color: #2d7e67;
     box-sizing: border-box;
@@ -521,14 +518,14 @@ ul{
 .career-box{
     margin: 0 50px;
     padding: 30px;
-    background-color: #303030;
+    background-color: var(--secondary-bg-color);
     position: relative;
     border-radius: 6px;
     font-size: 15px;
 }
 .career-img-bg{
     position: absolute;
-    background-color: #303030;
+    background-color: var(--secondary-bg-color);
     width: 48px;
     height: 48px;
     border-radius: 50%;
@@ -550,7 +547,7 @@ ul{
     position: absolute;
     width: 6px;
     height: 100%;
-    background-color: #303030;
+    background-color: var(--secondary-bg-color);
     top: 0;
     left: 50%;
     margin-left: -3px;
@@ -564,9 +561,6 @@ ul{
     100%{
         height: 100%;
     }
-}
-.career-box h2{
-    font-weight: 600;
 }
 .career-box small{
     display: inline-block;
@@ -594,7 +588,6 @@ ul{
     border-right: 15px solid #303030;
     left: -15px;
 }
-
 @media screen and (max-width: 600px){
     .timeline{
         margin: 50px auto;
@@ -625,25 +618,21 @@ ul{
         left: -15px;
     }
 }
-
-
-
+/*------------------------------------.btn-block------------------------------------*/
 .btn-block{
     display:block;
     width:100%;
     min-height:100px;
-    color:#f2f2f2;
     position:relative;
-    background: #007f8a;
+    background: var(--main-brand-color-dark);
     font-size:50px;
-    font-weight:700;
     text-transform:uppercase;
     letter-spacing:1px;
     transition:background-color .5s linear;
 }
 .btn-block:focus,
 .btn-block:hover{
-    background:#4d0ce8;
+    background: var(--secondary-brand-color);
     transition:all .3s ease;
 }
 .info-text{
@@ -679,13 +668,9 @@ ul{
     visibility:visible;
     transform:translate3D(0,0,0) scale(1);
 }
-
-
-
-
-
+/*------------------------------------PORTFOLIO------------------------------------*/
 #portfolio-section{
-    background-color: #1b1b1b;
+    background-color: var(--primary-bg-color);
 }
 .projects{
     display: flex;
@@ -704,11 +689,9 @@ ul{
     margin: 30px 0px 70px 0px;
 }
 .project-link{
-    color: #00b7c7;
+    color: var(--main-brand-color);
 }
-
-
-
+/*------------------------------------CONTACT------------------------------------*/
 #contact-section{
     background-color: red;
 }
@@ -727,54 +710,51 @@ ul{
 }
 
 
-
+/*------------------------------------FOOTER------------------------------------*/
 #footer{
-    background:linear-gradient(45deg,#00b7c7 0,#4d0ce8 100%);
-    height:200px;
-    min-height:100px;
-    color:#f2f2f2;
+    background: linear-gradient(45deg, var(--main-brand-color) 0, var(--secondary-brand-color) 100%);
+    height: 200px;
+    min-height: 100px;
 }
 .footer-list{
     display: flex;
     justify-content: center;
 }
 .footer-item{
-    display:inline-block;
-    margin:1rem .5rem;
+    display: inline-block;
+    margin: 1rem .5rem;
 }
 .footer-icon:focus,
 .footer-icon:hover{
-    color:#fff;
-    fill:#fff;
-    transition:all .3s ease;
-    transform:scale(1.1) translateY(-5px);
+    color: #fff;
+    fill: #fff;
+    transition: all .3s ease;
+    transform: scale(1.1) translateY(-5px);
 }
 .email,
 .linkedin{
-    display:block;
-    position:relative;
-    color:#fff;
-    width:2.5rem;
-    height:2.5rem;
-    position:relative;
+    display: block;
+    position: relative;
+    color: #fff;
+    width: 2.5rem;
+    height: 2.5rem;
+    position: relative;
 }
 .github,
 .instagram{
-    display:block;
-    position:relative;
-    color:#fff;
-    width:2.3rem;
-    height:2.3rem;
-    position:relative;
-    top:-1px;
+    display: block;
+    position: relative;
+    color: #fff;
+    width: 2.3rem;
+    height: 2.3rem;
+    position: relative;
+    top: -1px;
 }
 .copyright-wrapper{
-    margin-top:25px;
-    font-size:13px;
-    color:#f2f2f2;
-    font-weight:500;
+    margin-top: 25px;
 }
 .copyright-wrapper p{
-    margin:0;
-    color:#f2f2f2;
+    margin: 0;
+    font-weight: bold;
+    font-size: 13px;
 }
