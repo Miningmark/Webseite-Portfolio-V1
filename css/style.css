@@ -717,8 +717,6 @@ p, span, a, li{
     flex-direction: column;
     margin: 50px;
 }
-
-
 /*------------------------------------FOOTER------------------------------------*/
 #footer{
     background: linear-gradient(45deg, var(--main-brand-color) 0, var(--secondary-brand-color) 100%);
