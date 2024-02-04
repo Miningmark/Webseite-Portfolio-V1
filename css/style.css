@@ -61,6 +61,12 @@ p, span, a, li{
     padding-right: 10px;
     padding-left: 5px;
     border-radius: 10px 0 0 10px;
+    opacity: 0;
+    visibility: hidden;
+}
+.show{
+    opacity: 1;
+    visibility: visible;
 }
 .nav-container ul{
     display: flex;
@@ -93,6 +99,9 @@ p, span, a, li{
 }
 .menu-icon:hover{
     transform: translateX(-10px);
+    filter: invert(50%) sepia(86%) saturate(1843%) hue-rotate(147deg) brightness(96%) contrast(101%);
+}
+#intro-section:active .menu-icon{
     filter: invert(50%) sepia(86%) saturate(1843%) hue-rotate(147deg) brightness(96%) contrast(101%);
 }
 .menu-text{
