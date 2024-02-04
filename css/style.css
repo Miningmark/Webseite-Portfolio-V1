@@ -63,10 +63,12 @@ p, span, a, li{
     border-radius: 10px 0 0 10px;
     opacity: 0;
     visibility: hidden;
+    transition: 1s;
 }
 .show{
     opacity: 1;
     visibility: visible;
+    transition: 1s;
 }
 .nav-container ul{
     display: flex;
