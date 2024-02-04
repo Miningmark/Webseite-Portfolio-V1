@@ -50,7 +50,7 @@ p, span, a, li{
 .nav-container{
     position: fixed;
     right: 0;
-    top: calc(50% - 100px);
+    top: calc(50% - 130px);
     height: 260px;
     width: 50px;
     background-color: var(--nav-color);
@@ -101,10 +101,11 @@ p, span, a, li{
 }
 .menu-icon:hover{
     transform: translateX(-10px);
-    filter: invert(50%) sepia(86%) saturate(1843%) hue-rotate(147deg) brightness(96%) contrast(101%);
+    
 }
-#intro-section:active .menu-icon{
+.menu-active{
     filter: invert(50%) sepia(86%) saturate(1843%) hue-rotate(147deg) brightness(96%) contrast(101%);
+    color: var(--main-brand-color);
 }
 .menu-text{
     position: absolute;
@@ -120,8 +121,9 @@ p, span, a, li{
     opacity: 1;
     transition: 0.5s;
     transform: translateX(-20px);
-    color: var(--main-brand-color);
+    /*color: var(--main-brand-color);*/
 }
+
 /*------------------------------------.sections------------------------------------*/
 .center-center{
     position: absolute;

@@ -16,45 +16,45 @@
         <ul>
             <li>
                 <a class="menu-list" href="#intro-section"> 
-                    <span><img class="menu-icon" src="assets/icons/home.svg" alt="home"></span>
-                    <span class="menu-text">Home</span>
+                    <img id="icon-home" class="menu-icon icon-home" src="assets/icons/home.svg" alt="home">
+                    <span id="text-home" class="menu-text icon-home">Home</span>
                 </a>
             </li>
             <li >
                 <a class="menu-list" href="#about-section">
-                    <img class="menu-icon" src="assets/icons/person.svg" alt="person">
-                    <span class="menu-text">Person</span>
+                    <img id="icon-person" class="menu-icon icon-person" src="assets/icons/person.svg" alt="person">
+                    <span id="text-person" class="menu-text">Person</span>
                 </a>
             </li>
             <li>
                 <a class="menu-list" href="#skills-section">
-                    <span><img class="menu-icon" src="assets/icons/school.svg" alt="school"></span>
-                    <span class="menu-text">Skills</span>
+                    <img id="icon-school" class="menu-icon" src="assets/icons/school.svg" alt="school">
+                    <span id="text-school" class="menu-text">Skills</span>
                 </a>
             </li>
             <li>
                 <a class="menu-list" href="#career-section">
-                    <img class="menu-icon" src="assets/icons/work.svg" alt="work">
-                    <span class="menu-text">Experience</span>
+                    <img id="icon-work" class="menu-icon" src="assets/icons/work.svg" alt="work">
+                    <span id="text-work" class="menu-text">Experience</span>
                 </a>
             </li>
             <li>
                 <a class="menu-list" href="#portfolio-section">
-                    <span><img class="menu-icon" src="assets/icons/web.svg" alt="Portfolio"></span>
-                    <span class="menu-text">Portfolio</span>
+                    <img id="icon-web" class="menu-icon" src="assets/icons/web.svg" alt="Portfolio">
+                    <span id="text-web" class="menu-text">Portfolio</span>
                 </a>
             </li>
             <li>
                 <a class="menu-list" href="#contact-section">
-                    <img class="menu-icon" src="assets/icons/email2.svg" alt="contact">
-                    <span class="menu-text">Contact</span>
+                    <img id="icon-email" class="menu-icon" src="assets/icons/email2.svg" alt="contact">
+                    <span id="text-email" class="menu-text">Contact</span>
                 </a>
             </li>
         </ul>
     </nav>
     <div id="scroll-body">
 <!--intro-->
-        <section id="intro-section" class="section">
+        <section id="intro-section" class="section scroll-section" data-icon="home">
             <div class="bg">
             </div>
             <div class="intro-body">
@@ -67,7 +67,7 @@
             <a href="#about-section"><img class="mous-icon" src="assets/icons/mouse.svg" alt="mous-icon"></a>
         </section>
 <!--about me-->
-        <section id="about-section" class="section">
+        <section id="about-section" class="section scroll-section" data-icon="person">
             <div class="section-wrapper">
                 <h1 class="section-heading">Hi, I'm Markus or also Miningmark</h1>
                 <h3 class="section-subheading">I am a detail-oriented software developer who is passionate about combining beautiful code with beautiful design.</h3>
@@ -83,7 +83,7 @@
             </div>
         </section>
 <!--skills-->
-        <section id="skills-section" class="section">
+        <section id="skills-section" class="section scroll-section" data-icon="school">
             <div class="section-wrapper">
                 <h1 class="section-heading">Skills</h1>
                 <span class="divider"></span>
@@ -120,7 +120,7 @@
             </div>
         </section>
 <!--career history-->
-        <section id="career-section" class="section">
+        <section id="career-section" class="section scroll-section" data-icon="work">
             <div class="section-wrapper">       <!--   class="section-wrapper"   -->
                 <h1 class="section-heading">Experience</h1>
                 <span class="divider"></span>
@@ -184,7 +184,7 @@
             </div>
         </section>
 <!--portfolio-->
-        <section id="portfolio-section" class="section">
+        <section id="portfolio-section" class="section scroll-section" data-icon="web">
             <div class="section-wrapper">
                 <div>
                     <h1 class="section-heading">Portfolio</h1>
@@ -229,7 +229,7 @@
             <img class="info-img" src="assets/icons/github.svg" alt="github">
         </a>
 <!--contact-->
-        <section id="contact-section" class="section">
+        <section id="contact-section" class="section scroll-section" data-icon="email">
             <div class="section-wrapper-contact">
                 <h1 class="section-heading">Get in Touch</h1>
                 <span class="divider"></span>
