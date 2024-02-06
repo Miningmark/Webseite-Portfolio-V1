@@ -318,94 +318,80 @@ p, span, a, li{
     min-height: 700px;
 } 
 .headshot{
-    display:inline-block;
-    width:35%;
-    height:auto;
-    border-radius:50%;
-    margin-top:-100px;
-    float:right;
-    max-width:450px;
+    display: inline-block;
+    width: 35%;
+    height: auto;
+    border-radius: 50%;
+    margin-top: -100px;
+    float: right;
+    max-width: 450px;
+}
+.about-text-wrapper{
+    display: inline-block;
+    width: 60%;
+    vertical-align: top;
+}
+.about-text{
+    margin-bottom: 10px;
+    font-size: 1.15rem;
 }
 @media only screen and (max-width:1000px){
     .headshot{
-        margin-top:0;
+        margin-top: 0;
     }
 }
 @media only screen and (max-width:900px){
     .headshot{
-        float:none;
-        margin:10px 0 40px 0;
-        width:300px;
+        float: none;
+        margin: 10px 0 40px 0;
+        width: 300px;
+    }
+    .about-text-wrapper{
+        width: 100%;
     }
 }
 @media only screen and (max-width:400px){
     .headshot{
-        width:250px;
+        width: 250px;
     }
-}
-.about-text-wrapper{
-    display:inline-block;
-    width:60%;
-    vertical-align:top;
-}
-@media only screen and (max-width:900px){
-    .about-text-wrapper{
-        width:100%;
-    }
-}
-.about-text{
-    margin-bottom:10px;
-    font-size:1.15em;
 }
 /*------------------------------------SKILLS------------------------------------*/
 #skills-section{
     background-color: var(--secondary-bg-color);
 }
 .skills-flex-wrapper{
-    height:17em;
+    height: 17rem;
     display: flex;
-    flex-flow:row wrap;
+    flex-flow: row wrap;
     justify-content: flex-start;
 }
-@media only screen and (max-width:768px){
-    #skills-section .skills-flex-wrapper{
-        display:block;
-        height:auto;
-    }
-}
 .dev-wrapper{
-    width:40%;
-    max-width:400px;
+    width: 40%;
+    max-width: 400px;
     display: flex;
-    justify-content: center;
     flex-direction: column;
 }
 .skills-heading{
-    text-transform:uppercase;
-    font-weight:700;
-    font-size:1.5vw;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.5rem;
 }
 .skills-heading-dev{
-    text-transform:uppercase;
-    font-size:1.5vw;
+    text-transform: uppercase;
+    font-size: 1.5rem;
     text-align: center;
 }
-@media only screen and (max-width:800px) {
-    .skills-heading {
-        font-size:18px;
-    }
-}
 .sprite{
-    width:35px;
-    height:35px;
-    margin-right:7px;
-    position:relative;
-    top:3px;
-    display:inline-block;
-    vertical-align:text-bottom;
-    background-repeat:no-repeat;
-    background-position:center center;
-    background-size:100%;
+    width: 35px;
+    height: 35px;
+    margin-right: 7px;
+    position: relative;
+    top: 3px;
+    display: inline-block;
+    vertical-align: text-bottom;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
 }
 .sprite-dev{
     transform: scale(1.15);
@@ -418,72 +404,104 @@ p, span, a, li{
 .sprite-knowledge{
     background-image: url(../assets/icons/school.svg);
 }
-@media only screen and (max-width:800px) {
-    .skills-heading {
-        font-size:18px
-    }
-}
 .dev-list{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 .dev-item{
-    display:inline-block;
-    border:2px solid var(--text-color);
-    border-radius:50%;
-    text-align:center;
-    margin:10px 10px 10px 10px;
-    width:100px;
-    height:100px;
-    line-height:7;
-    font-size:14px;
+    display: inline-block;
+    border: 2px solid var(--text-color);
+    border-radius: 50%;
+    text-align: center;
+    margin: 10px 10px 10px 10px;
+    width: 100px;
+    height: 100px;
+    line-height: 7;
+    font-size: 14px;
     transition: transform .5s ;
-    transform:scale(1);
+    transform: scale(1);
 }
 .dev-item:hover{
     transition: transform 0.5s;
     transform: scale(1.1);
 }
-@media only screen and (max-width:1170px) {
-    .dev-item {
-        width:80px;
-        height:80px;
-        font-size:14px;
-        line-height:5.5;
-        margin:5px 5px 5px 0;
-    }
-}
-@media only screen and (max-width:800px) {
-    .dev-item {
-        width:100px;
-        height:100px;
-        line-height:7;
-        margin:1%;
-    }
-}
-@media only screen and (max-width:480px) {
-    .dev-item {
-        width:80px;
-        height:80px;
-        line-height:5.5;
-    }
-}
 .list{
-    margin-top:30px;
-    margin-left:20px;
+    margin-top: 30px;
+    margin-left: 20px;
 }
-.tool-wrapper{
+.tool-wrapper, .knowledge-wrapper{
     margin-left: 120px;
     display: flex;
     flex-direction: column;
     justify-content: left;
 }
-.knowledge-wrapper{
-    margin-left: 120px;
+.tool-knowledge-wrapper{
     display: flex;
-    flex-direction: column;
-    justify-content: left;
+    flex-direction: row;
+    justify-content: center;
+}
+@media only screen and (max-width:1300px) {
+    .dev-item {
+        width: 80px;
+        height: 80px;
+        font-size: 14px;
+        line-height: 5.5;
+        margin: 5px 5px 5px 0;
+    }
+    .tool-wrapper{
+        margin-left: 2.5vw;
+    }
+    .knowledge-wrapper{
+        margin-left: 2.5vw;
+    }
+}
+@media only screen and (max-width:900px) {
+    .dev-item {
+        width: 100px;
+        height: 100px;
+        line-height: 7;
+        margin: 1%;
+    }
+    .skills-heading {
+        font-size: 18px
+    }
+    #skills-section .skills-flex-wrapper{
+        
+        justify-content: center;
+        height: auto;
+    }
+    .dev-wrapper{
+        width: 100%;
+        padding-bottom: 25px;
+    }
+    .tool-knowledge-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .tool-wrapper, .knowledge-wrapper{
+        margin-left: 0px;
+    }
+}
+@media only screen and (max-width:500px) {
+    .dev-item {
+        width: 80px;
+        height: 80px;
+        line-height: 5.5;
+    }
+    .tool-knowledge-wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .knowledge-wrapper{
+        margin-top: 25px;
+    }
+    .list{
+        margin-top: 10px;
+    }
 }
 /*------------------------------------CAREER------------------------------------*/
 #career-section{
