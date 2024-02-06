@@ -633,7 +633,7 @@ p, span, a, li{
         margin: 50px auto;
     }
     .timeline:after{
-        left: 31px;
+        left: 23px;
     }
     .career-container{
         width: 100%;
@@ -642,6 +642,8 @@ p, span, a, li{
     }
     .career-box{
         font-size: 13px;
+        margin: 0 20px 0 40px;
+        padding: 30px;
     }
     .career-box small{
         margin-bottom: 10px;
@@ -650,12 +652,12 @@ p, span, a, li{
         left: 0;
     }
     .career-img-bg, .right-container-img{
-        left: 8px;
+        left: 0;
     }
     .left-container-arrow, .right-container-arrow{
         border-right: 15px solid #303030;
         border-left: 0;
-        left: -15px;
+        left: -14px;
     }
 }
 /*------------------------------------.btn-block------------------------------------*/
