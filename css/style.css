@@ -54,7 +54,7 @@ p, span, a, li{
     height: 260px;
     width: 50px;
     background-color: var(--nav-color);
-    z-index: 2;
+    z-index: 10;
     display: flex;
     align-items: center;
     justify-content: right;
@@ -685,14 +685,13 @@ label[for="toggle_button"]{
         left: 23px;
     }
     .career-container{
-        width: 100%;
+        width: calc(100% - 30px);
         padding-left: 30px;
-        padding-right: 30px;
     }
     .career-box{
         font-size: 13px;
-        margin: 0 20px 0 40px;
-        padding: 30px;
+        margin: 0 0 0 40px;
+        padding: 15px;
     }
     .career-box small{
         margin-bottom: 10px;
