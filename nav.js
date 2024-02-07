@@ -17,7 +17,7 @@ var flag = false;
 var sections = document.querySelectorAll('.scroll-section');
 
 window.addEventListener('scroll', function () {
-    checkIfInView();
+    //checkIfInView();
     if(!flag){
         sections = document.querySelectorAll('.scroll-section');
     }
