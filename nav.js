@@ -17,6 +17,7 @@ var flag = false;
 var sections = document.querySelectorAll('.scroll-section');
 
 window.addEventListener('scroll', function () {
+    checkIfInView();
     if(!flag){
         sections = document.querySelectorAll('.scroll-section');
     }
@@ -70,3 +71,36 @@ function updateActiveMenu(activeSection) {
         }
     });
 }
+
+
+/*
+
+let careerAnimation = document.querySelector(".timeline");
+
+
+
+function checkIfInView(){
+    let windowHeight = window.innerHeight;
+    let windowTopPosition = window.scrollY;
+    let windowBottomPosition = windowHeight + windowTopPosition;
+
+    let elementHeight = careerAnimation.getBoundingClientRect().height;
+    let elementTopPosition = careerAnimation.getBoundingClientRect().top;
+    let elementBottomPosition = elementHeight + elementTopPosition;
+
+    console.log("----------------------------");
+    console.log(elementHeight);
+    console.log(elementTopPosition);
+    console.log(elementBottomPosition);
+    console.log(windowHeight);
+    console.log(elementTopPosition);
+    console.log(elementBottomPosition);
+
+    if(elementTopPosition < (windowHeight / 2)){
+        careerAnimation.classList.add("in-view");
+        console.log("TRUE");
+    }
+ 
+}
+
+*/

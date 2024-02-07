@@ -573,6 +573,9 @@ label[for="toggle_button"]{
     opacity: 0;
     z-index: 2;
 }
+.in-view{
+    
+}
 .left-container{
     left: 0;
 }
