@@ -17,7 +17,7 @@ var flag = false;
 var sections = document.querySelectorAll('.scroll-section');
 
 window.addEventListener('scroll', function () {
-    //checkIfInView();
+    checkIfInView();
     if(!flag){
         sections = document.querySelectorAll('.scroll-section');
     }
@@ -71,9 +71,11 @@ function updateActiveMenu(activeSection) {
 }
 
 
-/*
 
-let careerAnimation = document.querySelector(".timeline");
+
+let careerTimelineAnimation = document.querySelector(".timeline");
+let careerContainerAnimation = document.querySelectorAll(".career-container");
+
 
 
 
@@ -82,8 +84,8 @@ function checkIfInView(){
     let windowTopPosition = window.scrollY;
     let windowBottomPosition = windowHeight + windowTopPosition;
 
-    let elementHeight = careerAnimation.getBoundingClientRect().height;
-    let elementTopPosition = careerAnimation.getBoundingClientRect().top;
+    let elementHeight = careerTimelineAnimation.getBoundingClientRect().height;
+    let elementTopPosition = careerTimelineAnimation.getBoundingClientRect().top;
     let elementBottomPosition = elementHeight + elementTopPosition;
 
     console.log("----------------------------");
@@ -95,10 +97,13 @@ function checkIfInView(){
     console.log(elementBottomPosition);
 
     if(elementTopPosition < (windowHeight / 2)){
-        careerAnimation.classList.add("in-view");
+        careerTimelineAnimation.classList.add("in-view-timeline");
+        careerContainerAnimation.forEach(container => {
+            container.classList.add("in-view-career-container");
+        });
+        //careerContainerAnimation.classList.add("in-view-career-container");
         console.log("TRUE");
     }
  
 }
 
-*/

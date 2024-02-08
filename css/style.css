@@ -559,21 +559,25 @@ label[for="toggle_button"]{
 }
 .timeline{
     position: relative;
+    width: 100%;
+    box-sizing: border-box;
+}
+.timeline-container{
+    position: relative;
     max-width: 1200px;
     width: 100%;
     margin: 100px auto;
-    box-sizing: border-box;
 }
 .career-container{
     padding: 10px 0;
     position: relative;
     width: 50%;
-    animation: movedown 1s linear forwards;
+    
     opacity: 0;
     z-index: 2;
 }
-.in-view{
-    
+.in-view-career-container{
+    animation: movedown 1s linear forwards;
 }
 .left-container{
     left: 0;
@@ -591,19 +595,22 @@ label[for="toggle_button"]{
         transform: translateY(0px);
       }
 }
-.career-container:nth-child(1){
+.in-view-career-container:nth-child(1){
     animation-delay: 0s;
 }
-.career-container:nth-child(2){
+.in-view-career-container:nth-child(2){
+    animation-delay: 0s;
+}
+.in-view-career-container:nth-child(3){
     animation-delay: 1s;
 }
-.career-container:nth-child(3){
+.in-view-career-container:nth-child(4){
     animation-delay: 2s;
 }
-.career-container:nth-child(4){
+.in-view-career-container:nth-child(5){
     animation-delay: 3s;
 }
-.career-container:nth-child(5){
+.in-view-career-container:nth-child(6){
     animation-delay: 4s;
 }
 .career-box{
@@ -633,8 +640,7 @@ label[for="toggle_button"]{
 .right-container-img{
     left: -24px;
 }
-.timeline:after{
-    content: '';
+.in-view-timeline{
     position: absolute;
     width: 6px;
     height: 100%;
