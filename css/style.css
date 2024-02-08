@@ -367,7 +367,6 @@ label[for="toggle_button"]{
     min-height: 700px;
 } 
 .headshot{
-    display: inline-block;
     width: 35%;
     height: auto;
     border-radius: 50%;

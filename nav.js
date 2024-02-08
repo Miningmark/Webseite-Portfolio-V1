@@ -23,7 +23,6 @@ window.addEventListener('scroll', function () {
     }
     var maxVisibleSection = getMaxVisibleSection();
     updateActiveMenu(maxVisibleSection);
-    //var rect = this.document.querySelector('.testtest').getBoundingClientRect();
 });
 
 function getMaxVisibleSection() {
@@ -37,7 +36,6 @@ function getMaxVisibleSection() {
             maxVisibleSection = section;
         }
     });
-    //console.log(maxVisibleSection);
     //console.log(maxVisibleSection);
     return maxVisibleSection;
 }
