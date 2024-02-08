@@ -211,7 +211,7 @@ label[for="toggle_button"]{
     margin-top: 16px;
 }
 .section-wrapper{
-    padding: 75px 100px 50px 100px;
+    padding: 75px 100px 75px 100px;
 }
 @media only screen and (max-width: 800px){
     .section-subheading{
@@ -225,7 +225,7 @@ label[for="toggle_button"]{
         padding: 75px 50px 50px 75px;
     }
 }
-@media only screen and (max-width: 500px){
+@media only screen and (max-width: 600px){
     .section-wrapper{
         padding: 75px 25px 50px 25px;
     }
@@ -428,6 +428,7 @@ label[for="toggle_button"]{
     text-transform: uppercase;
     font-size: 1.5rem;
     text-align: center;
+    padding-bottom: 20px;
 }
 .sprite{
     width: 35px;
@@ -572,7 +573,7 @@ label[for="toggle_button"]{
     position: relative;
     max-width: 1200px;
     width: 100%;
-    margin: 100px auto;
+    margin: 50px auto 40px auto;
 }
 .career-container{
     padding: 10px 0;
@@ -700,11 +701,8 @@ label[for="toggle_button"]{
     }
 }
 @media screen and (max-width: 700px){
-    .timeline{
-        margin: 50px auto;
-    }
     .in-view-timeline{
-        left: 21px;
+        left: 23px;
     }
     .career-container{
         width: calc(100% - 30px);
@@ -851,6 +849,8 @@ button{
     padding: 15px;
     border-radius: 10px;
     color: var(--secondary-bg-color);
+    font-weight: bold;
+    font-size: 1rem;
     
 }
 button:hover{
