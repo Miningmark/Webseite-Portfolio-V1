@@ -556,6 +556,12 @@ label[for="toggle_button"]{
     background-color: #2d7e67;
     box-sizing: border-box;
     overflow: initial;
+    background-image: url(../assets/img/career-bg.jpg);
+    vertical-align: text-bottom;
+   
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 .timeline{
     position: relative;
@@ -587,13 +593,16 @@ label[for="toggle_button"]{
 }
 @keyframes movedown {
     0% {
-        opacity: 1;
+        opacity: 0;
         transform: translateY(-30px);
-      }
-      100% {
+    }
+    50%{
+        opacity: 1;
+    }
+    100% {
         opacity: 1;
         transform: translateY(0px);
-      }
+    }
 }
 .in-view-career-container:nth-child(1){
     animation-delay: 0s;
@@ -685,12 +694,17 @@ label[for="toggle_button"]{
     border-right: 15px solid #303030;
     left: -14px;
 }
-@media screen and (max-width: 600px){
+@media screen and (max-width: 950px){
+    #career-section .section-wrapper{
+        padding: 75px 5vw 50px 5vw;
+    }
+}
+@media screen and (max-width: 700px){
     .timeline{
         margin: 50px auto;
     }
-    .timeline:after{
-        left: 23px;
+    .in-view-timeline{
+        left: 21px;
     }
     .career-container{
         width: calc(100% - 30px);
