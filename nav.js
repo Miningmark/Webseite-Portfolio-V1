@@ -88,13 +88,13 @@ function checkIfInView(){
     let elementTopPosition = careerTimelineAnimation.getBoundingClientRect().top;
     let elementBottomPosition = elementHeight + elementTopPosition;
 
-    console.log("----------------------------");
-    console.log(elementHeight);
-    console.log(elementTopPosition);
-    console.log(elementBottomPosition);
-    console.log(windowHeight);
-    console.log(elementTopPosition);
-    console.log(elementBottomPosition);
+    //console.log("----------------------------");
+    //console.log(elementHeight);
+    //console.log(elementTopPosition);
+    //console.log(elementBottomPosition);
+    //console.log(windowHeight);
+    //console.log(elementTopPosition);
+    //console.log(elementBottomPosition);
 
     if(elementTopPosition < (windowHeight / 2)){
         careerTimelineAnimation.classList.add("in-view-timeline");
@@ -102,7 +102,7 @@ function checkIfInView(){
             container.classList.add("in-view-career-container");
         });
         //careerContainerAnimation.classList.add("in-view-career-container");
-        console.log("TRUE");
+        //console.log("TRUE");
     }
  
 }
