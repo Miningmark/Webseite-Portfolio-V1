@@ -818,6 +818,7 @@ label[for="toggle_button"] {
 }
 .project-img {
   width: 60vw;
+  max-width: 1200px;
 }
 .project-description {
   margin: 30px 0px 50px 0px;
